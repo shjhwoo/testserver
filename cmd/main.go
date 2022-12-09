@@ -5,6 +5,7 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"mockserver/pkg/handler"
 )
 
 type App struct {
@@ -31,8 +32,8 @@ func NewServer() {
 		},
 	))
 
-	router.GET("/stress1", stress1)
-	router.POST("/stress2", stress2)
+	router.GET("/stress1", handler.Stress1)
+	router.POST("/stress2", handler.Stress2)
 
 	app.Router = router
 	Server = app

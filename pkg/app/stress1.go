@@ -1,8 +1,8 @@
-package main
+package handler
 
 import "github.com/gin-gonic/gin"
 
-func stress1(c *gin.Context) {
+func Stress1(c *gin.Context) {
 
 	fib(10)
 
