@@ -52,7 +52,7 @@ func main() {
 
 	NewServer()
 
-	err := Start("0.0.0.0:8080")
+	err := Start("0.0.0.0:80")
 	if err != nil {
 		log.Fatal("Cannot start server:", err)
 	}
