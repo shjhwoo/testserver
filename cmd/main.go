@@ -52,7 +52,7 @@ func main() {
 
 	NewServer()
 
-	err := Start("http://103.218.157.114:8080")
+	err := Start("103.218.157.114:8080")
 	if err != nil {
 		log.Fatal("Cannot start server:", err)
 	}
